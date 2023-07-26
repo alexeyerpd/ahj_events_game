@@ -34,8 +34,12 @@ export class Field {
       "beforeend",
       `
       <div class="container">
-        <div class="score">0</div>
-        <div class="miss">0</div>
+        <div>
+          <span>Points: </span><span class="score">0</span>
+        </div>
+        <div>
+          <span>Miss: </span><span class="miss">0</span>
+        </div>
         <table class="field">
             <tbody>
                 <tr class="row">
@@ -69,7 +73,7 @@ export class Field {
           <div class="modal-container">
             <span class="modal-text">Game over</span>
             <div>
-              <span>Истоговый счет: </span>
+              <span>Итоговый счет: </span>
               <span class="final-score">0</span>
             </div>
             <button class="modal-btn btn-restart">Начать заново</button>
